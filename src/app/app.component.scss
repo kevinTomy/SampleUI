@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+.navbar{
+    height: 70px;
+    background-color: #047aed;
+}
+.container{
+    height: inherit;
+    width: calc(100vw - 140px);
+    //padding: 0 40px;
+    margin: 0 auto;
+}
+nav{
+    height: inherit;
+    color: white;
+    
+}
+li{
+    list-style-type:none;
+}
+li:hover{
+    text-decoration: underline solid #fff;
+    cursor: pointer;
+}
+
+
+
+
