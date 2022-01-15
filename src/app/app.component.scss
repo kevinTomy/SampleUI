@@ -8,13 +8,7 @@
 
 .navbar{
     height: 70px;
-    background-color: #047aed;
-}
-.container{
-    height: inherit;
-    width: calc(100vw - 140px);
-    //padding: 0 40px;
-    margin: 0 auto;
+    background-color: var(--bg-primary);
 }
 nav{
     height: inherit;
@@ -28,6 +22,86 @@ li:hover{
     text-decoration: underline solid #fff;
     cursor: pointer;
 }
+
+//utilities
+.container{
+    height: inherit;
+    width: calc(100vw - 140px);
+    margin: 0 auto;
+}
+.grid{
+    align-items: center;  
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.card{
+    height: 300px;
+    width: 550px;
+    padding: 40px;
+    margin: 10px 0;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 10px 10px 7px rgba(0,0,0,0.4);
+    color: #333;
+}
+.btn{
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    font-weight: 700;
+    text-decoration: none;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--bg-primary);
+    cursor: pointer;
+   
+}
+.btn:hover{
+    transform: scale(0.9);
+}
+.btn-outline{
+    border: 1px solid #fff;
+    color: white;
+}
+//showcase
+.showcase{
+  position: relative;
+  height: 250px;  
+  background-color: var(--bg-primary);
+  color: white;
+}
+.showcase::after{
+    content: '';
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    bottom: -70px;
+    transform: skewY(-3deg);
+    background-color: #fff;
+}
+.showcase-text > p{
+   margin: 20px 0;
+}
+.showcase-form {
+   
+    justify-self: end;
+    z-index: 100;
+.form-control{
+    margin: 14px 0;
+}
+}  
+.showcase-form input:not([type = "submit"]){
+    width: 100%;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 2px solid #b4becd;
+    
+}
+.showcase-form input:focus{
+    outline: none;
+}
+
+
 
 
 
