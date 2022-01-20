@@ -34,9 +34,12 @@ li:hover{
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
+.grid-3{
+    @extend .grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 .card{
-    height: 300px;
-    width: 550px;
+  
     padding: 40px;
     margin: 10px 0;
     background-color: #fff;
@@ -66,7 +69,7 @@ li:hover{
 //showcase
 .showcase{
   position: relative;
-  height: 250px;  
+  height: 320px;  
   background-color: var(--bg-primary);
   color: white;
 }
@@ -83,8 +86,8 @@ li:hover{
    margin: 20px 0;
 }
 .showcase-form {
-   
     justify-self: end;
+    width: 400px;
     z-index: 100;
 .form-control{
     margin: 14px 0;
@@ -99,6 +102,34 @@ li:hover{
 }
 .showcase-form input:focus{
     outline: none;
+}
+
+// stats
+
+.stats{
+    padding-top: 100px;
+    .fa{
+        font-family: FontAwesome !important;
+    }
+    h3:first-of-type,.grid-3 > div{
+        text-align: center;
+    }
+    p{
+        margin-top: 10px;
+    }
+}
+
+//cli
+.cli .grid{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+.cli .grid > img{
+    width: 100%;
+}
+.cli .grid > *:first-child{
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
 }
 
 
